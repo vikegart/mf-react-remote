@@ -55,7 +55,19 @@ module.exports = {
                     singleton: true,
                     requiredVersion: dependencies["react-dom"],
                 },
-            },
+                "react-redux": {
+                    singleton: true,
+                    version: dependencies["react-redux"],
+                },
+                'redux-thunk': {
+                    singleton: true,
+                    version: dependencies['redux-thunk'],
+                },
+                'reselect': {
+                    singleton: true,
+                    version: dependencies['reselect'],
+                },
+            }
         }),
         new HtmlWebpackPlugin({
             template: "./public/index.html",
